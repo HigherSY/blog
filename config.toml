@@ -1,0 +1,38 @@
+baseURL = "https://blog.17zuonie.org/"
+languageCode = "zh-hans"
+title = "Higher's Blog"
+theme = "hermit"
+
+hasCJKLanguage = true
+
+[author]
+  name = "Higher"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  [[params.social]]
+    name = "telegram"
+    url = "https://t.me/HigherSY"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/HigherSY"
+
+[menu]
+
+  [[menu.main]]
+    name = "Writing"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "File"
+    url = "https://files.17zuonie.org/"
+    weight = 20
