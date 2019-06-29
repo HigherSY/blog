@@ -12,7 +12,7 @@ test:
 
 pages:
   script:
-  - hugo
+  - hugo --gc --minify --baseURL=https://highersy.gitlab.io/blog/
   artifacts:
     paths:
     - public
