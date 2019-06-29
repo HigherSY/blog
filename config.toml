@@ -20,6 +20,8 @@ pygmentsStyle = "dracula"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
 
+  bgImg = "img/bg.jpg"
+
   [[params.social]]
     name = "telegram"
     url = "https://t.me/HigherSY"
