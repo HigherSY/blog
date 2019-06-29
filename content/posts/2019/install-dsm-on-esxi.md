@@ -1,7 +1,7 @@
 ---
 title: "在 ESXi 上运行黑群晖 DSM"
 date: 2019-06-29T11:47:17+08:00
-draft: true
+draft: false
 toc: false
 images:
 tags: 
