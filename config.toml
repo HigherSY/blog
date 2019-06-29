@@ -2,8 +2,11 @@ baseURL = "https://blog.17zuonie.org/"
 languageCode = "zh-hans"
 title = "Higher's Blog"
 theme = "hermit"
-
 hasCJKLanguage = true
+
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsStyle = "dracula"
 
 [author]
   name = "Higher"
