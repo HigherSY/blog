@@ -1,7 +1,0 @@
-{{ $quicklinkjs := resources.Get "js/quicklink.umd.js" |  resources.Fingerprint }}
-<script type="text/javascript" src="{{ $quicklinkjs.Permalink }}" integrity="{{ $quicklinkjs.Data.Integrity }}"></script>
-<script>
-  quicklink({
-    ignores: [uri => uri.includes('index.xml')]
-  });
-</script>
