@@ -2,6 +2,10 @@
 {{ $gitalkjs := resources.Get "js/gitalk.min.js" }}
 {{ $bundlejs := slice $quicklinkjs $gitalkjs | resources.Concat "js/bundle.js" | resources.Fingerprint }}
 <script type="text/javascript" src="{{ $bundlejs.Permalink }}" integrity="{{ $bundlejs.Data.Integrity }}"></script>
+
+{{ $gitalkstyle := resources.Get "css/gitalk.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $gitalkstyle.Permalink }}" integrity="{{ $gitalkstyle.Data.Integrity }}">
+
 <script>
   quicklink({
     ignores: [uri => uri.includes('index.xml')]
@@ -16,5 +20,3 @@
     distractionFreeMode: false
   })
 </script>
-{{ $gitalkstyle := resources.Get "css/gitalk.css" | resources.Fingerprint }}
-<link rel="stylesheet" href={{ $gitalkstyle.Permalink }} integrity={{ $gitalkstyle.Data.Integrity }}>

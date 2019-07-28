@@ -22,6 +22,8 @@ pygmentsStyle = "dracula"
 
   bgImg = "img/bg.jpg"
 
+  customCSS = ["css/fix.css"]
+
   [[params.social]]
     name = "telegram"
     url = "https://t.me/HigherSY"
